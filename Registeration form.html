@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form for Summer Camp</title>
+    <style>
+        .hidden-input {
+            display: none;
+            margin-top: 10px;
+        }
+    
+        #toggle:checked+label+.hidden-input {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Codingal Summer Courses</h1>
+        <nav>
+            Reference links <br><ul>
+           <li> <a href="Semantics.html">Semantics</a><br></li>
+            <li><a href="Group form fills.html">Group form fills</a><br></li>
+           <li> <a href="Dropdown.html">Dropdown</a></ul></li>
+        </nav>
+    </header>
+    <main>
+        <section>
+    <p>Come along for the <mark>Summer Camp</mark>, where we see the excited things <b> that the world as never seen</b></p></section>
+    <section>
+    <h3>Register for the BEST summer camps</h3>
+    <form action="https://getform.io/f/apjpmvga" method="POST">
+        <fieldset>
+            <legend><b>Register for Summer Camp</b></legend>
+            <label>Name:</label><br>
+            
+            <small>First Name</small>
+            <input type="text" name="Name" required placeholder="e.g. Rakshith">
+            <small>Last Name</small>
+            <input type="text" name="Name" required placeholder="e.g. Samudrala"><br><br>
+            <label>Birth date:</label><br>
+           <label for="month"><small>Day</small></label> 
+           <select name="Day" id="day" required>
+            <option value="">--Select Day--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            <small><label for="month">Month</label></small>
+            <select id="month" name="month" required>
+                <option value="">--Select Month--</option>
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+            </select>
+           <small> <label for="year">Choose a year:</label></small>
+            <select id="year" name="year" required>
+                <option value="">--Select Year--</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+            </select><br><br>
+
+            <label for="Mobile Number">Mobile Number(This will be Hidden):</label>
+            <input type="password" name="Mobile Number" required><br><br>
+
+            <label for="Email">Email address:</label>
+            <input type="text" name="Email" required placeholder="e.g. example@gmail.com"><br><br>
+            
+            <label for="Primary Address"><h3>Your Address:</h3></label>
+                <label for="street">Street Address Line:</label><br>
+                <input type="text" id="street" name="street" placeholder="e.g. 5th Cross, MG Road" required><br><br>
+            
+                <label for="Street address">Street Address Line 2:</label><br>
+                <input type="text" id="address" name="address" placeholder="e.g. Apartment name, House no." required><br><br>
+            
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city" placeholder="Your City" required><br><br>
+            
+                <label for="state">State:</label><br>
+                <input type="text" id="state" name="state" placeholder="Your State" required><br><br>
+            
+                <label for="pincode">Pincode:</label><br>
+                <input type="text" id="pincode" name="pincode" placeholder="e.g. 560001" required><br><br> 
+
+                <label for="Type">Which Course?</label><br>
+                <input type="checkbox" id="toggle">
+                <label for="toggle">Logical Chess Course</label>
+                
+                <div class="hidden-input">
+                    <label for="Timings">Timings</label><br>
+                    <input type="radio" id="Timings" name="Timings" value="4pm to 5pm">4pm to 5pm
+                    <input type="radio" id="Timings" name="Timings" value="5pm to 6pm">5pm to 6pm
+                    <input type="radio" id="Timings" name="Timings" value="6pm to 7pm">6pm to 7pm
+                </div>
+                <br>
+                <input type="checkbox" id="toggle">
+                <label for="toggle">Codingal Coding Course</label>
+                
+                <div class="hidden-input">
+                    <label for="Timings">Timings</label><br>
+                    <input type="radio" id="Timings" name="Timings" value="5pm to 6pm">5pm to 6pm
+                    <input type="radio" id="Timings" name="Timings" value="6pm to 7pm">6pm to 7pm
+                    <input type="radio" id="Timings" name="Timings" value="7pm to 8pm">7pm to 8pm
+                </div>
+                <br>
+                <input type="checkbox" id="toggle">
+                <label for="toggle">Codingal Math Course</label>
+                
+                <div class="hidden-input">
+                    <label for="Timings">Timings</label><br>
+                    <input type="radio" id="Timings" name="Timings" value="4pm to 5pm">4pm to 5pm
+                    <input type="radio" id="Timings" name="Timings" value="5pm to 6pm">5pm to 6pm
+                    <input type="radio" id="Timings" name="Timings" value="6pm to 7pm">6pm to 7pm
+                </div><br><br>
+                <label for="Found"><b>How did you get to hear us?</b></label><br>
+                <select name="Found" id="Found">
+                    <option value="">--Select--</option>
+                    <option value="Youtube">Youtube</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="SnapChat">Snapchat</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Other">Other</option>
+                </select><br><br>
+                <label for="Submit">Submit if completed,</label>
+                <input type="submit" name="Submit" value="Done">
+        </fieldset>
+    </form>
+</section>
+<aside>
+    <h3>Terms and Conditions</h3>
+        <p><strong>1. Registration:</strong> All participants must be registered with accurate details. Incomplete or false
+            information may not give you admission.</p>
+        <p><strong>2. Age Requirement:</strong> Participants must be between 5 and 18 years old as of the camp start date.
+        </p>
+        <p><strong>3. Health and Safety:</strong> Parents/guardians must inform us of any medical conditions or allergies.
+            Emergency contact information is mandatory.</p>
+        <p><strong>4. Conduct:</strong> Respectful behavior is expected. Bullying, violence, or disobedience may result in
+            removal without a refund.</p>
+        <p><strong>5. Liability:</strong> While we ensure a safe environment, the camp organizers are not responsible for
+            any personal injuries or lost items.</p>
+        <p><strong>6. Refunds:</strong> Refunds are only available if cancellation is made at least 7 days before the camp
+            starts. After that, no refunds will be issued.</p>
+        <p><strong>7. Media Consent:</strong> By registering, you allow us to use photos/videos taken during the camp for
+            promotional purposes.</p>
+    </div>
+    
+    <label>
+        <input type="checkbox" required>
+        I have read and agree to the Terms and Conditions
+    </label>
+</aside>
+</main>
+<footer>&copy;All rights reserved, 20-5-2025</footer>
+</body>
+</html>
